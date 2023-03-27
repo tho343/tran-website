@@ -305,7 +305,44 @@ button{
 .project-info>span{
     color: #6f6d7d;
 }
+/* contact-section */
+form{
+    width: 100%;
+    display: flex;
+    row-gap: 1.75em;
+    flex-direction: column;
+}
+.form-container{
+    display: grid;
+    place-items: center;
+}
+input{
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid var(--emphasize-color);
+    border-radius: 5px;
+}
+.input{
+    position: relative;
+    
+}
+input[type="text"]{
+    width: 100%;
+}
+.input-label{
+    position: absolute;
+    padding: 0.25em;
+    white-space: nowrap;
+    background: var(--background-color);
+    transform: translate(0,0);
+    margin: 0.25em;
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+}
 
+.input-tap{
+    transform: translate(.25rem, -65%) scale(.8);
+}
 /* media */
 
 
@@ -360,6 +397,9 @@ button{
     .project-cards-container{
         flex-direction: row;
         
+    }
+    form{
+        width: 50%;
     }
     
 }
