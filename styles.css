@@ -314,6 +314,7 @@ form{
 }
 .form-container{
     display: grid;
+    row-gap: 1em;
     place-items: center;
 }
 input{
