@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <script
-      src="https://kit.fontawesome.com/13a49a32f3.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/13a49a32f3.js" crossorigin="anonymous"></script>
 
     <title>Tran Ho</title>
   </head>
+
   <body>
     <nav class="nav-center">
       <div class="nav-header">
@@ -25,11 +27,19 @@
 
       <div class="links show-links" id="links">
         <ul>
-          <a href="#about-section"><li class="nav-link">about</li> </a>
+          <a href="#about-section">
+            <li class="nav-link">about</li>
+          </a>
 
-          <a href="#skills-section"><li class="nav-link">skills</li> </a>
-          <a href="#projects-section"><li class="nav-link">projects</li> </a>
-          <a href="#contact-section"><li class="nav-link">contact</li> </a>
+          <a href="#skills-section">
+            <li class="nav-link">skills</li>
+          </a>
+          <a href="#projects-section">
+            <li class="nav-link">projects</li>
+          </a>
+          <a href="#contact-section">
+            <li class="nav-link">contact</li>
+          </a>
         </ul>
       </div>
     </nav>
@@ -51,11 +61,7 @@
               <a href="#contact-section">Contact</a>
             </button>
             <button class="secondary-btn">
-              <a
-                href="./TranHoResume_updated_march23.docx"
-                download="TranHo_Resume_2023"
-                >Download Resume</a
-              >
+              <a href="./TranHoResume_updated_march23.docx" download="TranHo_Resume_2023">Download Resume</a>
             </button>
           </div>
         </div>
@@ -71,11 +77,7 @@
           <span class="vertical-line"></span>
           <div class="about-content">
             <div class="image-container about-image">
-              <img
-                src="./images/profile-pic.JPG"
-                alt="profile photo"
-                id="about-image"
-              />
+              <img src="./images/profile-pic.JPG" alt="profile photo" id="about-image" />
             </div>
             <p>
               I am a freshly graduate from San Jose State University with
@@ -98,10 +100,7 @@
             <h4 class="title">Develop Skills</h4>
             <div class="item-list">
               <div class="item">
-                <i
-                  class="icon fa-brands fa-square-js"
-                  style="color: #4e4898"
-                ></i>
+                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
                 <p>intermediate</p>
               </div>
               <div class="item">
@@ -109,10 +108,7 @@
                 <p>intermediate</p>
               </div>
               <div class="item">
-                <i
-                  class="icon fa-brands fa-css3-alt"
-                  style="color: #4e4898"
-                ></i>
+                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
                 <p>intermediate</p>
               </div>
               <div class="item">
@@ -130,114 +126,110 @@
           </div>
         </div>
       </section>
-      <section class="projects-container" id="projects-section">
+      <section class="projects-container " id="projects-section">
         <h1 class="projects-heading">Projects</h1>
-        <div class="project-cards-container">
+        <div class="project-cards-container  ">
           <!-- card start -->
           <div class="project-card">
             <div class="project-image-container">
-              <img
-                src="./images/customCountdownScreenshot.png"
-                alt="a screenshot of countdown app with data time and minute spans"
-              />
+              <img src="./images/customCountdownScreenshot.png"
+                alt="a screenshot of countdown app with data time and minute spans" />
             </div>
             <div class="project-info">
               <h3 class="project-title">Custom Countdown App</h3>
+              <div class="tech-used">
+                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
+                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
+                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
+              </div>
               <span class="project-description">
                 A simple countdown app allow user to custom date, and used
                 localStorage for storing saved data.
               </span>
-              <div class="tech-used">
-                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <i
-                  class="icon fa-brands fa-square-js"
-                  style="color: #4e4898"
-                ></i>
-                <i
-                  class="icon fa-brands fa-css3-alt"
-                  style="color: #4e4898"
-                ></i>
-              </div>
+
               <div class="source-code">
-                <a
-                  href="https://github.com/tho343/custom-countdown"
-                  target="_blank"
-                  >git</a
-                >
-                <a
-                  href="https://tho343.github.io/custom-countdown/"
-                  target="_blank"
-                  >live</a
-                >
+                <a href="https://github.com/tho343/custom-countdown" target="_blank" title="open github link"><i
+                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
+                <a href="https://tho343.github.io/custom-countdown/" target="_blank" title="open live demo"><i
+                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
               </div>
             </div>
           </div>
           <!-- card end -->
+
+          <!-- card start -->
           <div class="project-card">
             <div class="project-image-container">
-              <img
-                src="./images/customCountdownScreenshot.png"
-                alt="a screenshot of countdown app with data time and minute spans"
-              />
+              <img src="./images/unsplashScreenshot.png"
+                alt="a screenshot of countdown app with data time and minute spans" />
             </div>
             <div class="project-info">
-              <h3 class="project-title">Custom Countdown App</h3>
-              <span class="project-description">
-                A simple countdown app allow user to custom date, and used
-                localStorage for storing saved data.
-              </span>
+              <h3 class="project-title">Unsplash Infinite Scroll</h3>
               <div class="tech-used">
                 <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <i
-                  class="icon fa-brands fa-square-js"
-                  style="color: #4e4898"
-                ></i>
-                <i
-                  class="icon fa-brands fa-css3-alt"
-                  style="color: #4e4898"
-                ></i>
+                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
+                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
               </div>
+              <span class="project-description">
+                A small side project used Unsplash API to infinitely fetch photos from Unsplash.com
+
+              </span>
+
               <div class="source-code">
-                <a
-                  href="https://github.com/tho343/custom-countdown"
-                  target="_blank"
-                  >git</a
-                >
-                <a
-                  href="https://tho343.github.io/custom-countdown/"
-                  target="_blank"
-                  >live</a
-                >
+                <a href="https://github.com/tho343/unsplash-infinite-scroll" target="_blank" title="open github link"><i
+                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
+                <a href="https://tho343.github.io/unsplash-infinite-scroll/" target="_blank" title="open live demo"><i
+                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
               </div>
             </div>
           </div>
+          <!-- card end -->
+
+          <!-- card start -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="./images/react-money-tracker.png"
+                alt="a screenshot of countdown app with data time and minute spans" />
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">React Money Tracker App</h3>
+              <div class="tech-used">
+                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
+                <i class="icon fa-brands fa-react" style="color: #4e4898"></i>
+                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
+              </div>
+              <span class="project-description">
+                A React Application allow user to store, and view expenses and incomes. Deployed with Github Pages, and used Github for version control.
+              </span>
+
+              <div class="source-code">
+                <a href="https://github.com/tho343/react-money-tracker-app" target="_blank" title="open github link"><i
+                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
+                <a href="https://tho343.github.io/react-money-tracker-app" target="_blank" title="open live demo"><i
+                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- card end -->
         </div>
       </section>
       <section class="contact-container" id="contact-section">
-        <h1 class="contact-heading">contact</h1>
+        <h1 class="contact-heading">contact me</h1>
 
         <!-- form -->
         <div class="form-container">
           <div class="social-media-container">
-            <a
-              href="https://github.com/tho343"
-              target="_blank"
-              title="open github"
-            >
-              <i
-                class="icon fa-brands fa-square-github"
-                style="color: #4e4898"
-              ></i>
+            <a href="https://github.com/tho343" target="_blank" title="open github">
+              <i class="icon fa-brands fa-square-github" style="color: #4e4898"></i>
             </a>
-            <a
-              href="https://www.linkedin.com/in/tran-ho-computer-sciencetist/"
-              target="_blank"
-              title="Open Linkedin"
-            >
+            <a href="https://www.linkedin.com/in/tran-ho-computer-sciencetist/" target="_blank" title="Open Linkedin">
               <i class="icon fa-brands fa-linkedin" style="color: #4e4898"></i>
             </a>
           </div>
-          <form>
+          <address>
+            <a href="mailto:tranho8596@gmail.com" target="_blank">tranho8596@gmail.com</a>
+          </address>
+          <!-- <form>
             <label class="input">
               <span class="input-label">Email</span>
               <input type="text" required />
@@ -259,7 +251,7 @@
             </label>
 
             <button type="submit">Send Email</button>
-          </form>
+          </form> -->
         </div>
         <!-- map -->
       </section>
@@ -269,4 +261,5 @@
     </footer>
     <script src="./script.js"></script>
   </body>
+
 </html>

@@ -267,6 +267,9 @@ button{
     align-items: center;
 }
 /* project */
+.source-code{
+    font-size: 2em;
+}
 .project-cards-container{
     display: flex;
     flex-direction: column;
@@ -291,7 +294,7 @@ button{
 .project-card{
     max-width: 20em;
     display: flex;
-    
+    height: 30em;
     text-align: center;
     padding:1.5em;
     border-radius: 10px;
@@ -344,10 +347,14 @@ input[type="text"]{
 .input-tap{
     transform: translate(.25rem, -65%) scale(.8);
 }
+.social-media-container >a{
+    margin-left: 1em;
+}
 /* media */
 
 
 @media screen and (min-width: 800px) {
+    
     .nav-center{
         display: flex;
         justify-content: space-between;
