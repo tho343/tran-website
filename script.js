@@ -6,12 +6,15 @@ const inputs = document.querySelectorAll('input');
 const labels = document.querySelectorAll("label");
 let  projects = [
     {   id: 1,
-        name: "countdown app"
+        name: "countdown app",
+        url: "https://tho343.github.io/custom-countdown/"
     },
     {   id: 2,
-        name: "money tracker app"
+        name: "money tracker app",
+        url: "https://tho343.github.io/react-money-tracker-app"
     },{   id: 3,
-        name: "calculator"
+        name: "calculator",
+        url:""
     },
 
 ]
