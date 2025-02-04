@@ -1,267 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/13a49a32f3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end font -->
 
     <title>Tran Ho</title>
   </head>
-
   <body>
-    <nav class="nav-center">
-      <div class="nav-header">
-        <div class="logo">TRAN HO</div>
-        <div class="nav-toggle" id="nav-toggle">
-          <div class="toggle-path line-1"></div>
-          <div class="toggle-path line-2"></div>
-          <div class="toggle-path line-3"></div>
+    <!-- start head -->
+    <header class="pb-3">
+      <!-- start of nav -->
+      <div class="container">
+        <div class="row">
+          <nav class="col-12 d-flex align-items-center justify-content-between">
+            <div
+              class="logo d-flex align-items-center justify-content-center gap-1"
+            >
+              <img
+                src="./images/logo.png"
+                style="height: 32px; width: 32px"
+                alt=""
+              />
+              <h5 class="mb-0">tran ho</h5>
+            </div>
+            <button id="toggle-menu"></button>
+            <div class="menu">
+              <ul class="d-flex gap-4 m-0">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
 
-      <div class="links show-links" id="links">
-        <ul>
-          <a href="#about-section">
-            <li class="nav-link">about</li>
-          </a>
-
-          <a href="#skills-section">
-            <li class="nav-link">skills</li>
-          </a>
-          <a href="#projects-section">
-            <li class="nav-link">projects</li>
-          </a>
-          <a href="#contact-section">
-            <li class="nav-link">contact</li>
-          </a>
-        </ul>
-      </div>
-    </nav>
+      <!-- end of nav -->
+      <!-- start of hero -->
+      <section class="hero d-flex align-items-center justify-content-center">
+        <div class="greeting">
+          <h1>
+            I am Tran Ho<br />
+            a Website Designer, Developer
+          </h1>
+          <button>Connect me</button>
+          <button>Resume</button>
+        </div>
+        <div class="image-container">
+          <img src="./images/profile-pic.JPEG" alt="profile picture" />
+        </div>
+      </section>
+      <!-- end of hero -->
+      <img
+        class="pattern green"
+        src="./images/Shadow.svg"
+        alt="circle gradient"
+      />
+      <img
+        class="pattern purple"
+        src="./images/Shadow-purple.svg"
+        alt="circle gradient"
+      />
+      <img
+        style="display: none"
+        class="pattern pink"
+        src="./images/Shadow-pink.svg"
+        alt="circle gradient"
+      />
+    </header>
+    <!-- end head -->
+    <!-- start main -->
     <main>
-      <section class="hero-container">
-        <div class="hero-text">
-          <div class="greeting">Hi 👋🏻 I'm Tran Ho</div>
-          <div class="hero-text-wrapper">
-            <div class="static-txt">I</div>
-            <ul class="dynamic-txts">
-              <li><span>am Frontend Developer</span></li>
-              <li><span>make delightful websites</span></li>
-            </ul>
-          </div>
-
-          <div class="hero-location">📍 Based in Bay Area, CA</div>
-          <div class="hero-action-btns">
-            <button class="primary-btn">
-              <a href="#contact-section">Contact</a>
-            </button>
-            <button class="secondary-btn">
-              <a href="https://docs.google.com/document/d/1DlkC1tZmwPfV9LWopMptQcBicYeB5YqbLvT2BfJwQ-k/edit?usp=sharing" target="_blank">View Resume</a>
-            </button>
+      <!-- start of projects -->
+      <section id="projects" class="projects px-4">
+        <hr />
+        <div
+          class="divider mb-5 d-flex justify-content-between align-items-center"
+        >
+          <h4 class="uppercase title">my projects</h4>
+          <a href="#">View All ></a>
+        </div>
+        <div class="container">
+          <div class="row gy-5 justify-content-center">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./images/react-money-tracker.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="title card-title">Project name</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur omnis, eligendi dignissimos quia accusantium quidem
+                    incidunt eaque illo neque expedita aliquam! Corporis eius
+                    ducimus minus atque eligendi recusandae iure rem?
+                  </p>
+                  <div class="source">
+                    <a href="#" class="">Github</a>
+                    <a href="#" class="text-nowrap">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./images/react-money-tracker.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="title card-title">Project name</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur omnis, eligendi dignissimos quia accusantium quidem
+                    incidunt eaque illo neque expedita aliquam! Corporis eius
+                    ducimus minus atque eligendi recusandae iure rem?
+                  </p>
+                  <div class="source">
+                    <a href="#" class="">Github</a>
+                    <a href="#" class="text-nowrap">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./images/react-money-tracker.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="title card-title">Project name</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur omnis, eligendi dignissimos quia accusantium quidem
+                    incidunt eaque illo neque expedita aliquam! Corporis eius
+                    ducimus minus atque eligendi recusandae iure rem?
+                  </p>
+                  <div class="source">
+                    <a href="#" class="">Github</a>
+                    <a href="#" class="text-nowrap">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./images/react-money-tracker.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="title card-title">Project name</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur omnis, eligendi dignissimos quia accusantium quidem
+                    incidunt eaque illo neque expedita aliquam! Corporis eius
+                    ducimus minus atque eligendi recusandae iure rem?
+                  </p>
+                  <div class="source">
+                    <a href="#" class="">Github</a>
+                    <a href="#" class="text-nowrap">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img src="./images/profile-pic.JPEG" alt="profile photo" />
+      </section>
+      <!-- end of projects -->
+
+      <!-- start of skill -->
+      <section class="skills">
+        <hr />
+        <div
+          class="divider mb-5 d-flex justify-content-between align-items-center"
+        >
+          <h4 class="uppercase title">skills</h4>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-3">
+              <div class="card">
+                <i></i>
+                <div class="card-body">
+                  <h5 class="card-title title text-nowrap">HTML</h5>
+                  <p class="text-nowrap">2 years</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <i></i>
+                <div class="card-body">
+                  <h5 class="card-title title text-nowrap">HTML</h5>
+                  <p class="text-nowrap">2 years</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <i></i>
+                <div class="card-body">
+                  <h5 class="card-title title text-nowrap">HTML</h5>
+                  <p class="text-nowrap">2 years</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <i></i>
+                <div class="card-body">
+                  <h5 class="card-title title text-nowrap">HTML</h5>
+                  <p class="text-nowrap">2 years</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="about-container" id="about-section">
-        <h1 class="about-heading">About Me</h1>
-        <div class="about-text">
-          <span class="vertical-line"></span>
-          <div class="about-content">
-            <div class="image-container about-image">
-              <img src="./images/profile-pic.JPG" alt="profile photo" id="about-image" />
-            </div>
-            <p>
-              I am a frontend developer who graduated from San Jose State University 
-              with a Bachelor Degree in Computer Science, class of 2022.<br/><br/>
-              During my college life I had chance to work as a frontend developer and from
-              there, I hooked with Javascript and ReactJS along with web development geers.
-               I have earned
-              myself hands-on experience in <em>HTML5</em>,
-              <em>Javascript ES7</em>, <em>CSS3</em>, and <em>React</em>. I
-              recognized myself to be a 
-              <em>passionate</em>, <em>determined</em>, and <em>fast learner</em>.<br /><br/>
-              My expertise lies in <em>Frontend Developer</em>, <em>Full-stack Developer</em>. My ultimate goal is to create web application that solve society problems, along with <em>scalability</em> and <em>user-friendly</em>. 
-            </p>
-          </div>
-        </div>
-      </section>
+      <!-- end of skill -->
 
-      <section class="skills-container" id="skills-section">
-        <h1 class="skills-heading">Skills</h1>
-        <div class="skills">
-          <div class="skill-items-container develop">
-            <h4 class="title">Develop Skills</h4>
-            <div class="item-list">
-              <div class="item">
-                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
-                <p>intermediate</p>
+      <!-- start of about -->
+      <section class="about">
+        <hr />
+        <div
+          class="divider mb-5 d-flex justify-content-between align-items-center"
+        >
+          <h4 class="uppercase title">About myself</h4>
+        </div>
+        <div class="wrapper container">
+          <div class="row">
+            <div class="col-12 about-container">
+              <div class="img-container">
+                <img src="./images/profile-pic.JPG" alt="profile photo" />
               </div>
-              <div class="item">
-                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <p>intermediate</p>
+              <div>
+                <p>
+                  I'm a passionate website developer and UI/UX designer with 3
+                  years of experience crafting seamless, user-friendly digital
+                  experiences. With a keen eye for design and a solid foundation
+                  in development, I specialize in creating visually appealing,
+                  responsive websites that prioritize both aesthetics and
+                  functionality. I thrive on solving complex challenges,
+                  ensuring that every project I work on not only meets but
+                  exceeds user expectations.
+                </p>
               </div>
-              <div class="item">
-                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
-                <p>intermediate</p>
-              </div>
-              <div class="item">
-                <i class="icon fa-brands fa-react" style="color: #4e4898"></i>
-                <p>intermediate</p>
-              </div>
-            </div>
-          </div>
-          <div class="skill-items-container design">
-            <h4 class="title">Design Skills</h4>
-            <div class="item">
-              <i class="icon fa-brands fa-figma" style="color: #4e4898"></i>
-              <p>intermediate</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="projects-container " id="projects-section">
-        <h1 class="projects-heading">Projects</h1>
-        <div class="project-cards-container  ">
-          <!-- card start -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img src="./images/customCountdownScreenshot.png"
-                alt="a screenshot of countdown app with data time and minute spans" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Custom Countdown App</h3>
-              <div class="tech-used">
-                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
-              </div>
-              <span class="project-description">
-                A simple countdown app allow user to custom date, and used
-                localStorage for storing saved data.
-              </span>
-
-              <div class="source-code">
-                <a href="https://github.com/tho343/custom-countdown" target="_blank" title="open github link"><i
-                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
-                <a href="https://tho343.github.io/custom-countdown/" target="_blank" title="open live demo"><i
-                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-
-          <!-- card start -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img src="./images/unsplashScreenshot.png"
-                alt="a screenshot of countdown app with data time and minute spans" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Unsplash Infinite Scroll</h3>
-              <div class="tech-used">
-                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-square-js" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
-              </div>
-              <span class="project-description">
-                A small side project used Unsplash API to infinitely fetch photos from Unsplash.com
-
-              </span>
-
-              <div class="source-code">
-                <a href="https://github.com/tho343/unsplash-infinite-scroll" target="_blank" title="open github link"><i
-                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
-                <a href="https://tho343.github.io/unsplash-infinite-scroll/" target="_blank" title="open live demo"><i
-                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-
-          <!-- card start -->
-          <div class="project-card">
-            <div class="project-image-container">
-              <img src="./images/react-money-tracker.png"
-                alt="a screenshot of countdown app with data time and minute spans" />
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">React Money Tracker App</h3>
-              <div class="tech-used">
-                <i class="icon fa-brands fa-html5" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-react" style="color: #4e4898"></i>
-                <i class="icon fa-brands fa-css3-alt" style="color: #4e4898"></i>
-              </div>
-              <span class="project-description">
-                A React Application allow user to store, and view expenses and incomes. Deployed with Github Pages, and used Github for version control.
-              </span>
-
-              <div class="source-code">
-                <a href="https://github.com/tho343/react-money-tracker-app" target="_blank" title="open github link"><i
-                    class=" fa-brands fa-square-github" style="color: #4e4898"></i></a>
-                <a href="https://tho343.github.io/react-money-tracker-app" target="_blank" title="open live demo"><i
-                    class="fa-solid fa-right-to-bracket" style="color: #4e4898"></i></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- card end -->
-        </div>
-      </section>
-      <section class="contact-container" id="contact-section">
-        <h1 class="contact-heading">contact me</h1>
-
-        <!-- form -->
-        <div class="form-container">
-          <div class="social-media-container">
-            <a href="https://github.com/tho343" target="_blank" title="open github">
-              <i class="icon fa-brands fa-square-github" style="color: #4e4898"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tran-ho-computer-sciencetist/" target="_blank" title="Open Linkedin">
-              <i class="icon fa-brands fa-linkedin" style="color: #4e4898"></i>
-            </a>
-          </div>
-          <address>
-            <a href="mailto:tranho8596@gmail.com" target="_blank">tranho8596@gmail.com</a>
-          </address>
-          <!-- <form>
-            <label class="input">
-              <span class="input-label">Email</span>
-              <input type="text" required />
-            </label>
-
-            <label class="input">
-              <span class="input-label">First Name</span>
-              <input type="text" required placeholder=" " />
-            </label>
-
-            <label class="input">
-              <span class="input-label">Last Name</span>
-              <input type="text" required placeholder=" " />
-            </label>
-
-            <label class="input">
-              <span class="input-label">Content</span>
-              <input type="text" required placeholder=" " />
-            </label>
-
-            <button type="submit">Send Email</button>
-          </form> -->
-        </div>
-        <!-- map -->
-      </section>
+      <!-- end of about -->
+      <!-- start footer -->
+      <footer class="p-4 d-flex align-items-center justify-content-center">
+        <p>© 2025 tran ho</p>
+      </footer>
+      <!-- end footer -->
     </main>
-    <footer>
-      <p>Created by Tran Ho</p>
-    </footer>
-    <script src="./script.js"></script>
+    <!-- end main -->
   </body>
-
+  <script src="./script.js"></script>
 </html>
